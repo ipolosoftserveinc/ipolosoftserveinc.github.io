@@ -39,7 +39,7 @@ function evenOdd() {
         }
     }
 }
-// evenOdd();
+evenOdd();
 
 /*
 3. Напишіть функцію randArray(k), яка заповнюватиме масив k випадковими цілими числами.
@@ -61,10 +61,10 @@ randomArr(5);
 function raiseToDegree(a, b) {
     return Math.pow(a, b);
 }
-// console.log(raiseToDegree(
-//     parseInt(prompt("Enter the 1st number:")),
-//     parseInt(prompt("Enter the 2nd number:")))
-// );
+console.log(raiseToDegree(
+    parseInt(prompt("Enter the 1st number:")),
+    parseInt(prompt("Enter the 2nd number:")))
+);
 
 /*
 5. Реалізуйте функцію – findMin(), яка повинна приймати довільну кількість числових аргументів і повертати той,
