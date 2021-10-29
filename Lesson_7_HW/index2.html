@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="other_tasks.js"></script>
+</head>
+<body onchange="sizes()" onload="setPageData()">
+    <p id="sizes"></p>
+    <p id='text'>I am learning JavaScript events!</p>
+    <div>
+        <button onclick="setCss()">Change style!</button>
+    </div>
+    <div>
+        <p></p>
+        <button onclick="firstButton()">First button</button>
+        <button ondblclick="secondButton()">Second button</button>
+        <button onmousedown="thirdButton()" onmouseup="thirdButtonMouseUp()">Third button</button>
+        <a href="#" onmouseover="linkHoverOn()" onmouseout="linkHoverOff()">Hover me</a>
+    </div>
+    <p></p>
+    <select id="select1">
+        <option value="first">First</option>
+        <option value="second">Second</option>
+        <option value="third">Third</option>
+        <option value="fourth">Fourth</option>
+    </select>
+    <button onclick="deleteElementFromList()">Delete</button>
+    <p></p>
+    <button onclick="press()" onmouseover="hoverOver()" onmouseout="hoverOff()">5th task</button>
+    <p id="5"></p>
+    <select id="countries" onchange="setCities()">
+        <option value="Ukraine">Ukraine</option>
+        <option value="Turkey">Turkey</option>
+        <option value="USA">USA</option>
+    </select>
+    <select id="cities" onchange="showCity()">
+
+    </select>
+    <p id="cc"></p>
+</body>
+</html>

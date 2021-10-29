@@ -114,15 +114,3 @@ const firstInputValue = firstInput.value;
 const secondInputValue = secondInput.value;
 firstInput.setAttribute('value', secondInputValue);
 secondInput.setAttribute('value', firstInputValue);
-
-
-/*
-7. Напишіть скріпт, який за допомогою засобів DOM створить для порожньої HTML-сторінки таку структуру з тегів і їх атрибутів.
-<body>
-<main class="mainClass check item">
-<di id="myDiv">
-<p>First paragraph</p>
-</div>
-</main>
-</body>
- */
