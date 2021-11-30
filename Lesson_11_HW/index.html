@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX</title>
+</head>
+<body>
+    <div id="task1">
+        <button id="bt1" onclick="vote()">Vote</button>
+    </div>
+    <br>
+    <div id="task2">
+        <button id="bt2" onclick="downloadBooks()">Download books</button>
+        <ul id="div2"></ul>
+    </div>
+    <script>
+        function vote() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "ajax_info.txt");
+            xhttp.send();
+            xhttp.onload = function () {
+                document.getElementById('bt1').innerHTML = `${this.responseText} ${new Date()}`;
+            }
+        }
+
+        function downloadBooks() {
+            const xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "books.json");
+            xhttp.send();
+            xhttp.onload = function () {
+                const responseData = JSON.parse(this.responseText);
+                for (let i in responseData["books"]) {
+                    document.getElementById("div2").innerHTML += `<li>${responseData["books"][i]}</li>`;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
