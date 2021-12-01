@@ -1,0 +1,14 @@
+{
+  "name": "Js_Learning_GitHub_Pages",
+  "version": "1.0.0",
+  "dependencies": {},
+  "type": "module",
+  "devDependencies": {
+    "jest": "^27.4.2",
+    "jquery": "^3.6.0",
+    "node-static": "^0.7.11"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
